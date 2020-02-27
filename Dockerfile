@@ -12,6 +12,6 @@ LABEL maintainer="Obba Paschal <paschalobba@gmail.com>"
 
 ADD entrypoint.sh /entrypoint.sh
 
-RUN chmod +x /entrypoint.sh
+RUN chmod +x /entrypoint.sh && apk add gnupg
 
 ENTRYPOINT [ "/entrypoint.sh" ]
