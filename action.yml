@@ -9,16 +9,16 @@ inputs:
     description: 'Server username'
     required: true
   port:
-    description: 'Server port to connect to',
+    description: 'Server port to connect to'
     required: true
   source:
-    description: 'Path to source file/folder to transfer',
+    description: 'Path to source file/folder to transfer'
     required: true
   target:
-    description: 'Destination folder on the server',
+    description: 'Destination folder on the server'
     required: true
   large_secret_passphrase:
-    description: 'Secret passphrase to decrypt your gpg file',
+    description: 'Secret passphrase to decrypt your gpg file'
     required: true
 
 runs: 
