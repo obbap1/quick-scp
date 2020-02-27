@@ -1,0 +1,30 @@
+name: 'obbap1/quick-gpg-scp'
+description: 'Run scp when an event is triggered'
+
+inputs:
+  host:
+    description: 'Hostname of the server you want to connect to'
+    required: true
+  username:
+    description: 'Server username'
+    required: true
+  port:
+    description: 'Server port to connect to',
+    required: true
+  source:
+    description: 'Path to source file/folder to transfer',
+    required: true
+  target:
+    description: 'Destination folder on the server',
+    required: true
+  large_secret_passphrase:
+    description: 'Secret passphrase to decrypt your gpg file',
+    required: true
+
+runs: 
+    using: 'docker'
+    image: 'Dockerfile'
+
+branding:
+    icon: 'briefcase',
+    color: 'green'
