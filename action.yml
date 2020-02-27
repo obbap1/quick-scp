@@ -21,10 +21,10 @@ inputs:
     description: 'Secret passphrase to decrypt your gpg file'
     required: true
 
-runs: 
-    using: 'docker'
-    image: 'Dockerfile'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
 
 branding:
-    icon: 'briefcase',
-    color: 'green'
+  icon: 'briefcase'
+  color: 'green'
