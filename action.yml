@@ -20,6 +20,12 @@ inputs:
   large_secret_passphrase:
     description: 'Secret passphrase to decrypt your gpg file'
     required: true
+  name_of_gpg:
+    description: 'The gpg file which is the encrypted pem file. eg a.pem.pgp'
+    required: true
+  pem_file_name:
+    description: 'The pem file name. eg. a.pem'
+    required: true
 
 runs:
   using: 'docker'
